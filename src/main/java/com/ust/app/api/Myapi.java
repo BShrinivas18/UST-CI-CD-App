@@ -7,7 +7,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class Myapi {
     @GetMapping
     public String SayHello(){
-        String output= "Hey Brijesh and Marcus";
-       return "Hello-World"+output;
+        String output= """
+       Hey Brijesh and Marcus
+       , Lets play cricket
+       """;
+       return " Hello-World "+output;
     }
 }
